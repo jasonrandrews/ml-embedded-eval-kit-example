@@ -1,20 +1,14 @@
-# Script to build an software example from the [Arm ML embedded evaluation kit](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ml-embedded-evaluation-kit/+/HEAD/docs/documentation.md#arm_ml-embedded-evaluation-kit)
+# GitHub Codespaces
+# Software example from the [Arm ML embedded evaluation kit](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ml-embedded-evaluation-kit/+/HEAD/docs/documentation.md#arm_ml-embedded-evaluation-kit)
 
-Pull the docker image:
+# Start GitHub Codespaces on this GitHub Project
+
+# Arm Compiler 6 requires a FlexLM license to operate
+To tell the GitHub Codespace where your FlexLM server set an environment variable
 ```bash
-$ docker pull armsw/arm-tools:corstone-300-ml-eval-kit
+$ export ARMLMD\_LICENSE\_FILE=7010@licenseserver
 ```
-
-Run using the run.sh script:
-```bash
-$ ./run.sh
-```
-
-# Passing the license server to the containers
-To tell the containers where your FlexLM server is located use -e to pass an environment variable and insert your license server.
-
-$ ./run.sh -e ARMLMD\_LICENSE\_FILE=7010@licenseserver
-
+You can also store the ARMLMD\_LICENSE\_FILE as a secret in Codespace. For more info check the [documentation about secrets](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-encrypted-secrets-for-your-codespaces)
 
 # Build the example software
 ```bash
