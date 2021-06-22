@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.134.0/containers/cpp
 {
-	"workspaceFolder": "/home/user1",
+	"workspaceFolder": "/home/ubuntu",
 	"name": "ml-evaluation",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
@@ -25,7 +25,7 @@
 		"arm-debug.keil-studio-vscode",
 		"arm-debug.gdb-debug-adapter",
 		"ms-vscode.cpptools",
-		"/home/user1/system/Arm-GDBPlugin-FVP-0.0.1.vsix"
+		"/home/ubuntu/system/Arm-GDBPlugin-FVP-0.0.1.vsix"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -35,5 +35,5 @@
 	// "postCreateCommand": "gcc -v",
 
 	// Comment out this line to run as root instead.
-	"remoteUser": "user1"
+	"remoteUser": "ubuntu"
 }
