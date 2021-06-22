@@ -6,13 +6,13 @@
             "type": "gdb-debug",
             "request": "launch",
             "runToMain": true,
-            "program": "/workspaces/Corstone-SSE-300-software/ml-embedded-evaluation-kit/build/bin/ethos-u-img_class.axf",
+            "program": "/workspaces/ml-embedded-eval-kit-example/ml-embedded-evaluation-kit/build/bin/ethos-u-img_class.axf",
             "gdbServerPort": "<port:31627>",
-            "gdbServer": "/home/ubuntu/system/FVP_Corstone_SSE-300_Ethos-U55/models/Linux64_GCC-6.4/FVP_Corstone_SSE-300_Ethos-U55",
+            "gdbServer": "/home/ubuntu/FVP_Corstone_SSE-300_Ethos-U55/models/Linux64_GCC-6.4/FVP_Corstone_SSE-300_Ethos-U55",
             "gdbServerArguments": [
                 "-S",
 		"-f",
-		"/workspaces/Corstone-SSE-300-software/FVP_config.txt",
+		"/workspaces/ml-embedded-eval-kit-example/FVP_config.txt",
                 "--plugin",
                 "/home/ubuntu/system/GDBRemoteConnection.so"
             ],
