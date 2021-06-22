@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "FVP Corstone SSE 300",
+            "type": "gdb-debug",
+            "request": "launch",
+            "runToMain": true,
+            "program": "/workspaces/Corstone-SSE-300-software/ml-embedded-evaluation-kit/build/bin/ethos-u-img_class.axf",
+            "gdbServerPort": "<port:31627>",
+            "gdbServer": "/home/ubuntu/system/FVP_Corstone_SSE-300_Ethos-U55/models/Linux64_GCC-6.4/FVP_Corstone_SSE-300_Ethos-U55",
+            "gdbServerArguments": [
+                "-S",
+		"-f",
+		"/workspaces/Corstone-SSE-300-software/FVP_config.txt",
+                "--plugin",
+                "/home/ubuntu/system/GDBRemoteConnection.so"
+            ],
+            "launchRegex": "GDBServer: Listening"
+        }
+    ]
+}
+
